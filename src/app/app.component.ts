@@ -19,13 +19,18 @@ export class AppComponent {
       capacity: 100,
       id: this.generateId()
     },
+    {
+      name: 'test',
+      workHours: 7.5,
+      id: this.generateId()
+    },
   ];
 
   constructor(private serverService: ServerService) {}
   onAddServer(name: string) {
     this.servers.push({
       name: name,
-      capacity: 50,
+      workHours: 0,
       id: this.generateId()
     });
 
