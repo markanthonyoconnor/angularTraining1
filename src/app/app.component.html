@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <input type="text" #serverName>
-      <input type="text" class="form-control" [(ngModel)]="servers.value">
+      <input type="text" #serverName class="form-control" [(ngModel)]="servers.value">
+      <!-- <input type="text" class="form-control" [(ngModel)]="servers.value"> -->
       <button class="btn btn-primary" (click)="onAddServer(serverName.value)">Add Server</button>
       <br><br>
       <button class="btn btn-primary" (click)="onSave()">Save Servers</button>
